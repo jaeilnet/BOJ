@@ -5,6 +5,6 @@ T = int(input())
 for i in range(T, 0, -1):
   print(i)
 
-for i in range(T):
-  print(T - i)
+# for i in range(T):
+#   print(T - i)
 
