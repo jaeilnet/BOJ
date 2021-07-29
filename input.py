@@ -5,7 +5,7 @@ A = int(input())
 
 # 공백을 기준으로 2개이상의 입력을 받을 때 5, 10
 
-N, X = map(int, input().split())
+X = map(int, input().split())
 
 # 공백을 기준으로 구분 된 데이터를 받을 때 ex) 1 3 4 5 2 3 4 5
 A = list(map(int, input().split()))

@@ -9,6 +9,6 @@ ary = []
 for i in range(1, 10):
   T = int(input())
   ary.append(T)
-  print(max(ary)) 
-  print(ary.index(max(ary))+1)
   
+print(max(ary)) 
+print(ary.index(max(ary))+1) 
