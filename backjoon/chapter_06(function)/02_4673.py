@@ -19,7 +19,19 @@ def sol(n):
     num = num - rmv
   for k in sorted(num):
     answer.append(k)
-    
+
   return answer
 
+n = int(input())
 print(sol(1000))
+
+
+# 1부터 10000까지의 num 중복되지 않는 배열과
+# 셀프넘버인 rmv 배열을 set 으로 만들어준다.
+
+# i와 j 이중for문으로 i 의 숫자들을 문자열로 받아서 j에 더 해준다.
+# rmv set 오브젝트에 넣어주고 rmv.add(i)
+
+# 1부터 10000까지의 배열에 셀프넘버 rmv 를 빼준다.
+
+# for 문을 sorted(num) 정렬해준다.

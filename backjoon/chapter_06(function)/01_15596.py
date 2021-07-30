@@ -11,3 +11,4 @@ def solve(a):
 def solve(a):
   return sum(a)
 
+# sum 이라는 함수는 a 안에 있는 걸 모두 더해준다.

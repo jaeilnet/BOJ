@@ -3,18 +3,26 @@
 
 # 입력 예제 110 출력 99
 
+n = int(input())
 
 def sol(n):
   result = 0
   for i in range(1, n+1):
-    rs = list(map(int, str(i)))
     if i <= 99:
       result += 1
     else:
-      
+      rs = list(map(int, str(i)))
       if rs[0] - rs[1] == rs[1] - rs[2]:
         result += 1
   return result
 
-n = int(input())
 print(sol(n))
+
+# 자리수 예를 들어 123 이면 1 2 3 한 자리 숫자의 차이가 일정한지를 물어보는 것이다.
+# 99 까지는 모두 한수로 본다.
+
+# 3자리 숫자부터 한수인지 판별 해야한다.
+
+# rs[0]- rs[1] == rs[1] - rs[2]
+# ex) 123에서 1 - 2 와 2 - 3이 같은지 물어보는 것. 둘다 1이므로 같다.
+# 같으면 result 에 1씩 누적해준다.
