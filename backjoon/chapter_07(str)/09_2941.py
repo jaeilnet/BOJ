@@ -26,26 +26,24 @@
 
 # S = input()
 
-# croAry = ['č', 'ć', 'dž', 'đ', 'lj', 'nj', 'š', 'ž']
-
 # engAry = ['c=', 'c-', 'dz=', 'd-', 'li', 'nj', 's=', 'z=']
 
+# S = input()
 # cnt = 0
 # arr = []
-# for i in range(len(croAry)):
-#   croAry[i] = engAry[i]
-#   for j in croAry:
-#     if j in croAry[i]:
-#       arr.append(j)
-#       cnt += 1
+# for i in engAry:
+#   if i in S:
+#     print(S, i)
+#     arr.append(i)
+#     cnt += 1
 # print(cnt, arr)
 
-
 a = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z='] 
-alpha = input() 
-for t in a:
-   print(t, a, alpha)
-   alpha = alpha.replace(t, '*') 
-   print(alpha)
 
+alpha = input()
+
+for t in a:
+  # print(t, a)
+  alpha = alpha.replace(t, "*")
+  # print(alpha)
 print(len(alpha))
